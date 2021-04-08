@@ -1,8 +1,8 @@
 # Response
 
-Adds your awesome app description here!
+Test your web page's Responsiveness in Linux Desktop ! 
 
-(maybe adds a screenshot, people loves screenshots!)
+<!-- (maybe adds a screenshot, people loves screenshots!)
 
 ## Get it from the elementary OS AppCenter!
 
@@ -50,3 +50,4 @@ ninja Response-pot
 # to regenerate and propagate changes to every po file
 ninja Response-update-po
 ```
+ -->
