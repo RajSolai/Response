@@ -20,6 +20,7 @@ public class AnotherMainView : Gtk.EventBox {
         main_grid.row_homogeneous = false ;
         main_grid.column_homogeneous = false ;
         main_grid.orientation = Gtk.Orientation.VERTICAL ;
+        main_grid.row_spacing = 5;
 
         go_btn.clicked.connect (() => {
             thewebview.loadPage () ;
@@ -47,8 +48,7 @@ public class AnotherMainView : Gtk.EventBox {
         device_box.add (iphone_se) ;
         device_box.add (pixel_2) ;
         device_box.add (base_desktop) ;
-        device_box.add (base_desktop) ;
-        device_box.add (base_desktop) ;
+
 
         entry_box.pack_start (url_entry) ;
         entry_box.pack_start (go_btn) ;

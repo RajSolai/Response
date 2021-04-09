@@ -27,6 +27,7 @@ public class MainView : Gtk.EventBox {
         main_grid.row_homogeneous = false;
         main_grid.column_homogeneous = false;
         //main_stack.expand = true ;
+
         main_stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT ;
         main_stack.add_titled(pixel_view,"pixel_view","Google Pixel");
         main_stack.add_titled(itenr_view,"itenr_view","IPhone 10R");
