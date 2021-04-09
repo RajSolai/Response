@@ -21,7 +21,14 @@ public class AnotherMainView : Gtk.EventBox {
         main_grid.orientation = Gtk.Orientation.VERTICAL ;
 
         go_btn.clicked.connect (() => {
-            thewebview.loadPage () ;
+            string uri;
+            if ("http://" in url_entry.text || "https://" in url_entry.text) {
+                uri = url_entry.text+"/";
+            }else {
+                uri = "http://"+url_entry.text+"/";
+            }
+            print(uri);
+            thewebview.loadPage (uri) ;
         }) ;
 
         // iphone_x.clicked.connect (() => {

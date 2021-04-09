@@ -20,7 +20,7 @@ public class MainView : Gtk.EventBox {
         var ise_view = new IseView();
 
         go_btn.clicked.connect (() => {
-           ise_view.loadPage();
+           //ise_view.loadPage();
         });
 
         main_stack.homogeneous = false;
