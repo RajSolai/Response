@@ -1,6 +1,10 @@
 # Response
 
-Test your web page's Responsiveness in Linux Desktop ! 
+Test your web page's Responsiveness in Linux Desktop ! <br>
+
+And build Mobile first Websites with less resource hog :)
+<!-- 
+![Main Screen on Lroton](./data/screenshots/mainscreen.png "Main Screen of Lroton") -->
 
 <!-- (maybe adds a screenshot, people loves screenshots!)
 
