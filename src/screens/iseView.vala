@@ -30,8 +30,9 @@ public class IseView : Gtk.EventBox {
         webview.load_uri (url) ;
     }
 
-    public void resizePage(int width, int height) {
+    public void resizePage(int width, int height,string ua) {
         set_size_request (width, height) ;
+        settings.user_agent = ua;
     }
 
     public signal void webview_loading_started() ;
