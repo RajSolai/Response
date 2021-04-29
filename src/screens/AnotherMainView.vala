@@ -8,10 +8,10 @@ public class AnotherMainView : Gtk.EventBox {
         var thewebview = new IseView () ;
         var main_grid = new Gtk.Grid () ;
         var url_entry = new Gtk.Entry () ;
-        var entry_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 2) ;
-        var device_box0 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) ;
-        var device_box1 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) ;
-        var go_btn = new Gtk.Button.with_label ("Open") ;
+        var entry_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 5) ;
+        var device_box0 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) ;
+        var device_box1 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) ;
+        var go_btn = new Gtk.Button.with_label ("Check") ;
         var iphone_se = new Gtk.Button.with_label ("iPhone SE") ;
         var moto_g4 = new Gtk.Button.with_label ("Moto G4") ;
         var iphone_8 = new Gtk.Button.with_label ("iPhone 8") ;
@@ -22,6 +22,9 @@ public class AnotherMainView : Gtk.EventBox {
         main_grid.row_homogeneous = false ;
         main_grid.column_homogeneous = false ;
         main_grid.orientation = Gtk.Orientation.VERTICAL ;
+        main_grid.row_spacing = 3;
+        url_entry.placeholder_text = "Enter URL here";
+
 
         go_btn.clicked.connect (() => {
             string uri ;
@@ -70,8 +73,8 @@ public class AnotherMainView : Gtk.EventBox {
         device_box1.add (moto_g4) ;
         device_box1.add (sg_fold) ;
 
-        entry_box.pack_start (url_entry) ;
-        entry_box.pack_start (go_btn) ;
+        entry_box.pack_start (url_entry,true,true,5) ;
+        entry_box.pack_start (go_btn,true,true,5) ;
 
         main_grid.add (entry_box) ;
         main_grid.add (device_box0) ;
