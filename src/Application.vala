@@ -45,8 +45,6 @@ public class Application : Gtk.Application {
         main_window = new Gtk.ApplicationWindow (this) ;
         var header_bar = new CustomHeaderBar () ;
       
-        main_window.get_style_context ().add_class ("rounded") ;
-
         main_window.default_height = 300 ;
         main_window.default_width = 300 ;
         main_window.set_titlebar (header_bar) ;

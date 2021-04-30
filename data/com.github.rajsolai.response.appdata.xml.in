@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020 solairaj <msraj085@gmail.com> -->
+<!-- Copyright 2021 solairaj <msraj085@gmail.com> -->
 <component type="desktop">
   <id>com.github.rajsolai.response</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>Your App's Name</name>
-  <summary>A Catchy Tagline</summary>
+  <name>Response</name>
+  <summary>Test your Webpage's Responsiveness</summary>
   <description>
-    <p>A quick summary of your app's main selling points and features. Just a couple sentences per paragraph is best.</p>
+    <p>Cool and Less resource hogging way to check webpage responsiveness.</p>
+    <ul>
+      <li>Minimal UI 🎨️.</li>
+      <li>Low resource consumption 🍰️.</li>
+      <li>Single Tab based Configuration 👨‍💻️.</li>
+    </ul>
   </description>
   <provides>
     <binary>com.github.rajsolai.response</binary>
   </provides>
-  <developer_name>solairaj</developer_name>
-  <url type="homepage"></url>
+  <developer_name>Solai Raj</developer_name>
+  <url type="homepage">http://github.com/RajSolai/Response</url>
   <url type="bugtracker">http://github.com/RajSolai/Response/issues</url>
   <url type="help">http://github.com/RajSolai/Response/issues</url>
   <screenshots>
     <screenshot type="default">
+      <image>https://raw.githubusercontent.com/RajSolai/Response/master/data/screenshots/main_screen.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1">
@@ -50,6 +56,10 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
-    <release version="0.0.1" date="2020-01-01"/>
+    <release version="1.0.0" date="2020-01-01">
+      <description>
+        <p>Initial Release</p>
+      </description>
+    </release>
   </releases>
 </component>
