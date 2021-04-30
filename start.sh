@@ -1,0 +1,1 @@
+flatpak-builder build  com.github.rajsolai.response.yml --user --install --force-clean
