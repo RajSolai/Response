@@ -6,6 +6,7 @@ public class AnotherMainView : Gtk.EventBox {
 
     public AnotherMainView () {
         var uri = new UriGen ();
+        var ua = new UserAgents();
         var thewebview = new IseView () ;
         var main_grid = new Gtk.Grid () ;
         var url_entry = new Gtk.Entry () ;
@@ -31,24 +32,19 @@ public class AnotherMainView : Gtk.EventBox {
         }) ;
 
         iphone_se.clicked.connect (() => {
-            var se = "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1" ;
-            thewebview.resizePage (320, 568, se) ;
+            thewebview.resizePage (320, 568, ua.iphone_se) ;
         }) ;
         iphone_8.clicked.connect (() => {
-            var i8 = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1" ;
-            thewebview.resizePage (375, 667, i8) ;
+            thewebview.resizePage (375, 667, ua.iphone_8) ;
         }) ;
         moto_g4.clicked.connect (() => {
-            var mg4 = "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Mobile Safari/537.36" ;
-            thewebview.resizePage (360, 640, mg4) ;
+            thewebview.resizePage (360, 640, ua.moto_g4) ;
         }) ;
         pixel_2.clicked.connect (() => {
-            var p2 = "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Mobile Safari/537.36" ;
-            thewebview.resizePage (411, 731, p2) ;
+            thewebview.resizePage (411, 731, ua.pixel_2) ;
         }) ;
         sg_fold.clicked.connect (() => {
-            var sgf = "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Mobile Safari/537.36" ;
-            thewebview.resizePage (280, 650, sgf) ;
+            thewebview.resizePage (280, 650, ua.sg_fold) ;
         }) ;
 
 
