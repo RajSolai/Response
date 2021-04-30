@@ -1,3 +1,5 @@
-.redbox{
-	background-color: red;
+.colored-button{
+	background-color: #3689e6;
+	color: #fafafa;
+	border: none;
 }

@@ -13,12 +13,12 @@ public class AnotherMainView : Gtk.EventBox {
         var entry_box = new HorizontalBox (5) ;
         var device_box0 = new HorizontalBox (3) ;
         var device_box1 = new HorizontalBox (3) ;
-        var go_btn = new LabelButton ("Check") ;
-        var iphone_se = new LabelButton ("iPhone SE") ;
-        var moto_g4 = new LabelButton ("Moto G4") ;
-        var iphone_8 = new LabelButton ("iPhone 8") ;
-        var pixel_2 = new LabelButton ("Pixel 2") ;
-        var sg_fold = new LabelButton ("Galaxy Fold") ;
+        var go_btn = new LabelButton ("Check",true) ;
+        var iphone_se = new LabelButton ("iPhone SE",false) ;
+        var moto_g4 = new LabelButton ("Moto G4",false) ;
+        var iphone_8 = new LabelButton ("iPhone 8",false) ;
+        var pixel_2 = new LabelButton ("Pixel 2",false) ;
+        var sg_fold = new LabelButton ("Galaxy Fold",false) ;
 
         go_btn.clicked.connect (() => {
             thewebview.loadPage (uri.generateUri (url_entry)) ;
