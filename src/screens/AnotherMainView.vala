@@ -5,30 +5,23 @@ public class AnotherMainView : Gtk.EventBox {
 
 
     public AnotherMainView () {
-        var uri = new UriGen ();
-        var ua = new UserAgents();
+        var uri = new UriGen () ;
+        var ua = new UserAgents () ;
         var thewebview = new IseView () ;
-        var main_grid = new Gtk.Grid () ;
-        var url_entry = new Gtk.Entry () ;
-        var entry_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 5) ;
-        var device_box0 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) ;
-        var device_box1 = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 3) ;
-        var go_btn = new Gtk.Button.with_label ("Check") ;
-        var iphone_se = new Gtk.Button.with_label ("iPhone SE") ;
-        var moto_g4 = new Gtk.Button.with_label ("Moto G4") ;
-        var iphone_8 = new Gtk.Button.with_label ("iPhone 8") ;
-        var pixel_2 = new Gtk.Button.with_label ("Pixel 2") ;
-        var sg_fold = new Gtk.Button.with_label ("Galaxy Fold") ;
-
-        main_grid.row_homogeneous = false ;
-        main_grid.column_homogeneous = false ;
-        main_grid.orientation = Gtk.Orientation.VERTICAL ;
-        main_grid.row_spacing = 3 ;
-        url_entry.placeholder_text = "Enter URL here" ;
-
+        var main_grid = new MainGrid () ;
+        var url_entry = new UrlEntry () ;
+        var entry_box = new HorizontalBox (5) ;
+        var device_box0 = new HorizontalBox (3) ;
+        var device_box1 = new HorizontalBox (3) ;
+        var go_btn = new LabelButton ("Check") ;
+        var iphone_se = new LabelButton ("iPhone SE") ;
+        var moto_g4 = new LabelButton ("Moto G4") ;
+        var iphone_8 = new LabelButton ("iPhone 8") ;
+        var pixel_2 = new LabelButton ("Pixel 2") ;
+        var sg_fold = new LabelButton ("Galaxy Fold") ;
 
         go_btn.clicked.connect (() => {
-            thewebview.loadPage (uri.generateUri(url_entry)) ;
+            thewebview.loadPage (uri.generateUri (url_entry)) ;
         }) ;
 
         iphone_se.clicked.connect (() => {

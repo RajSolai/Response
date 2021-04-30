@@ -10,6 +10,10 @@ sources = files (
     'screens/AnotherMainView.vala',
 
     'widgets/headerbar.vala',
+    'widgets/maingrid.vala',
+    'widgets/horizontalbox.vala',
+    'widgets/labelbutton.vala',
+    'widgets/urlentry.vala',
 
     'services/urigen.vala',
     'services/useragents.vala'
