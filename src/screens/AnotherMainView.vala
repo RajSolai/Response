@@ -5,6 +5,7 @@ public class AnotherMainView : Gtk.EventBox {
 
 
     public AnotherMainView () {
+        var uri = new UriGen ();
         var thewebview = new IseView () ;
         var main_grid = new Gtk.Grid () ;
         var url_entry = new Gtk.Entry () ;
@@ -17,32 +18,16 @@ public class AnotherMainView : Gtk.EventBox {
         var iphone_8 = new Gtk.Button.with_label ("iPhone 8") ;
         var pixel_2 = new Gtk.Button.with_label ("Pixel 2") ;
         var sg_fold = new Gtk.Button.with_label ("Galaxy Fold") ;
-        var loading_text = new Gtk.Label ("....") ;
 
         main_grid.row_homogeneous = false ;
         main_grid.column_homogeneous = false ;
         main_grid.orientation = Gtk.Orientation.VERTICAL ;
-        main_grid.row_spacing = 3;
-        url_entry.placeholder_text = "Enter URL here";
+        main_grid.row_spacing = 3 ;
+        url_entry.placeholder_text = "Enter URL here" ;
 
 
         go_btn.clicked.connect (() => {
-            string uri ;
-            if( "http://" in url_entry.text || "https://" in url_entry.text ){
-                uri = url_entry.text + "/" ;
-            } else {
-                uri = "http://" + url_entry.text + "/" ;
-            }
-            print (uri) ;
-            thewebview.loadPage (uri) ;
-        }) ;
-
-        thewebview.webview_loading_started.connect (() => {
-            loading_text.label = "loading...." ;
-        }) ;
-
-        thewebview.webview_loading_finished.connect (() => {
-            loading_text.label = "loaded !" ;
+            thewebview.loadPage (uri.generateUri(url_entry)) ;
         }) ;
 
         iphone_se.clicked.connect (() => {
@@ -73,13 +58,12 @@ public class AnotherMainView : Gtk.EventBox {
         device_box1.add (moto_g4) ;
         device_box1.add (sg_fold) ;
 
-        entry_box.pack_start (url_entry,true,true,5) ;
-        entry_box.pack_start (go_btn,true,true,5) ;
+        entry_box.pack_start (url_entry, true, true, 5) ;
+        entry_box.pack_start (go_btn, true, true, 5) ;
 
         main_grid.add (entry_box) ;
         main_grid.add (device_box0) ;
         main_grid.add (device_box1) ;
-        // main_grid.add (loading_text);
         main_grid.add (thewebview) ;
 
         add (main_grid) ;

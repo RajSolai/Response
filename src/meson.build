@@ -9,5 +9,8 @@ sources = files (
     'screens/iseView.vala',
     'screens/AnotherMainView.vala',
 
-    'widgets/headerbar.vala'
+    'widgets/headerbar.vala',
+
+    'services/urigen.vala',
+    'services/useragents.vala'
 )
