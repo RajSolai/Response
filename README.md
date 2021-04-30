@@ -3,18 +3,16 @@
 Test your web page's Responsiveness in Linux Desktop ! <br>
 
 And build Mobile first Websites with less resource hog :)
-<!-- 
-![Main Screen on Lroton](./data/screenshots/mainscreen.png "Main Screen of Lroton") -->
 
-<!-- (maybe adds a screenshot, people loves screenshots!)
+![Main Screen on Response](./data/screenshots/main_screen.png "Main Screen of Response")
 
-## Get it from the elementary OS AppCenter!
+<!-- ## Get it from the elementary OS AppCenter!
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/Response)
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/Response) -->
 
-This app is available on the elementary OS AppCenter.
+⏰️ Soon this app will be available on the elementary OS AppCenter.
 
-# Install it from source
+# 👨‍💻️ Install it from source
 
 You can of course download and install this app from source.
 
@@ -25,6 +23,7 @@ Ensure you have these dependencies installed
 * granite
 * gtk+-3.0
 * switchboard-2.0
+* webkit2gtk-4.0
 
 ## Install, build and run
 
@@ -32,26 +31,13 @@ Ensure you have these dependencies installed
 # install elementary-sdk, meson and ninja
 sudo apt install elementary-sdk meson ninja
 # clone repository
-git clone {{repository_url}} Response
+git clone https://github.com/RajSolai/Response 
 # cd to dir
 cd Response
 # run meson
 meson build --prefix=/usr
 # cd to build, build and test
 cd build
-sudo ninja install && Response
+sudo ninja install && com.github.rajsolai.response
 ```
 
-## Generating pot file
-
-```bash
-# after setting up meson build
-cd build
-
-# generates pot file
-ninja Response-pot
-
-# to regenerate and propagate changes to every po file
-ninja Response-update-po
-```
- -->
