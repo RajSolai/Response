@@ -2,10 +2,6 @@
 sources = files (
     'Application.vala',
 
-    'screens/MainView.vala',
-    'screens/pixelView.vala',
-    'screens/itenrView.vala',
-    'screens/motoView.vala',
     'screens/iseView.vala',
     'screens/AnotherMainView.vala',
 
@@ -14,7 +10,10 @@ sources = files (
     'widgets/horizontalbox.vala',
     'widgets/labelbutton.vala',
     'widgets/urlentry.vala',
+    'widgets/infobutton.vala',
 
     'services/urigen.vala',
-    'services/useragents.vala'
+    'services/useragents.vala',
+
+    'dialogs/aboutdialog.vala'
 )
