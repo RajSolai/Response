@@ -1,5 +1,22 @@
 /**
+ * Copyright (c) 2021 - Today solairaj (www.github.com/Rajsolai)
  *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ * Boston, MA 02110-1301 USA
+ *
+ * Authored by: solairaj <msraj085@gmail.com>
  */
 public class AnotherMainView : Gtk.EventBox {
 
@@ -13,12 +30,12 @@ public class AnotherMainView : Gtk.EventBox {
         var entry_box = new HorizontalBox (5) ;
         var device_box0 = new HorizontalBox (3) ;
         var device_box1 = new HorizontalBox (3) ;
-        var go_btn = new LabelButton ("Check",true) ;
-        var iphone_se = new LabelButton ("iPhone SE",false) ;
-        var moto_g4 = new LabelButton ("Moto G4",false) ;
-        var iphone_8 = new LabelButton ("iPhone 8",false) ;
-        var pixel_2 = new LabelButton ("Pixel 2",false) ;
-        var sg_fold = new LabelButton ("Galaxy Fold",false) ;
+        var go_btn = new LabelButton ("Check", true) ;
+        var iphone_se = new LabelButton ("iPhone SE", false) ;
+        var moto_g4 = new LabelButton ("Moto G4", false) ;
+        var iphone_8 = new LabelButton ("iPhone 8", false) ;
+        var pixel_2 = new LabelButton ("Pixel 2", false) ;
+        var sg_fold = new LabelButton ("Galaxy Fold", false) ;
 
         go_btn.clicked.connect (() => {
             thewebview.loadPage (uri.generateUri (url_entry)) ;

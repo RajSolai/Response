@@ -1,5 +1,22 @@
 /**
+ * Copyright (c) 2021 - Today solairaj (www.github.com/Rajsolai)
  *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ * Boston, MA 02110-1301 USA
+ *
+ * Authored by: solairaj <msraj085@gmail.com>
  */
 public class IseView : Gtk.EventBox {
 
@@ -12,7 +29,7 @@ public class IseView : Gtk.EventBox {
         settings.enable_developer_extras = true ;
         webview.set_settings (settings) ;
         webview.load_uri ("https://rajsolai.github.io/lroton/") ;
-        set_size_request (320, 568) ;// initial size
+        set_size_request (320, 568) ; // initial size
         add (webview) ;
     }
 
@@ -20,9 +37,9 @@ public class IseView : Gtk.EventBox {
         webview.load_uri (url) ;
     }
 
-    public void resizePage(int width, int height,string ua) {
+    public void resizePage(int width, int height, string ua) {
         set_size_request (width, height) ;
-        settings.user_agent = ua;
+        settings.user_agent = ua ;
     }
 
 }
