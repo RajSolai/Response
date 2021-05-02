@@ -1,1 +1,127 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.645780b9.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,p,l=r[0],a=r[1],f=r[2],c=0,s=[];c<l.length;c++)p=l[c],Object.prototype.hasOwnProperty.call(o,p)&&o[p]&&s.push(o[p][0]),o[p]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(i&&i(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var a=t[l];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=p(p.s=t[0]))}return e}var n={},o={1:0},u=[];function p(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,p),t.l=!0,t.exports}p.m=e,p.c=n,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},p.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},p.t=function(e,r){if(1&r&&(e=p(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(p.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)p.d(t,n,function(r){return e[r]}.bind(null,n));return t},p.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return p.d(r,"a",r),r},p.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},p.p="/";var l=this["webpackJsonpresponse-gh-page"]=this["webpackJsonpresponse-gh-page"]||[],a=l.push.bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)r(l[f]);var i=a;t()}([])</script><script src="/static/js/2.d5791d32.chunk.js"></script><script src="/static/js/main.073805f6.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Response - Test Responsiveness</title>
+        <style>
+            :root {
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+            .main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            .btn {
+                border-radius: 4px;
+                font-size: 14px;
+                border: none;
+                padding: 1rem 1.5rem 1rem 1.5rem;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                font-style: normal;
+                text-decoration: none;
+                color: #000;
+            }
+            .btn-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+            .download {
+                background: #64baff;
+            }
+            .star {
+                background: #d4d4d4;
+            }
+            .download:hover {
+                background: #3689e6;
+            }
+            .star:hover {
+                background: #abacae;
+            }
+            .download-img {
+                height: 24px;
+            }
+            .star-img {
+                height: 24px;
+            }
+            .desc {
+                display: none;
+                text-align: center;
+            }
+            @media screen and (min-width: 700px) {
+                .btn-box {
+                    flex-direction: row;
+                }
+                .btn {
+                    margin-left: 1rem;
+                }
+                .desc {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            <div class="header-icon">
+                <img
+                    src="https://raw.githubusercontent.com/RajSolai/Response/master/data/icons/128/com.github.rajsolai.response.svg"
+                    alt="response-icon"
+                />
+            </div>
+            <div class="header">
+                <h1>Response</h1>
+            </div>
+            <section class="desc">
+                <article>
+                    Test your web page's Responsiveness in Linux Desktop.
+                    <p>with comparatively less resource hog !</p>
+                    <p>with User Agent Emulation</p>
+                    <p>100% Native Application</p>
+                    <p>Light as Linux</p>
+                </article>
+            </section>
+            <section class="btn-box">
+                <div class="download-btn">
+                    <p>
+                        <a
+                            href="https://github.com/RajSolai/Response"
+                            class="btn download"
+                        >
+                            <img
+                                class="download-img"
+                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MTIuOTA3LDIxNC4wOEMzOTguNCwxNDAuNjkzLDMzMy42NTMsODUuMzMzLDI1Niw4NS4zMzNjLTYxLjY1MywwLTExNS4wOTMsMzQuOTg3LTE0MS44NjcsODYuMDgNCgkJCUM1MC4wMjcsMTc4LjM0NywwLDIzMi42NCwwLDI5OC42NjdjMCw3MC43Miw1Ny4yOCwxMjgsMTI4LDEyOGgyNzcuMzMzQzQ2NC4yMTMsNDI2LjY2Nyw1MTIsMzc4Ljg4LDUxMiwzMjANCgkJCUM1MTIsMjYzLjY4LDQ2OC4xNiwyMTguMDI3LDQxMi45MDcsMjE0LjA4eiBNMjU2LDM4NEwxNDkuMzMzLDI3Ny4zMzNoNjRWMTkyaDg1LjMzM3Y4NS4zMzNoNjRMMjU2LDM4NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
+                            />
+                            &nbsp;&nbsp;&nbsp;Download
+                        </a>
+                    </p>
+                </div>
+                <div class="star-btn">
+                    <p>
+                        <a
+                            href="https://github.com/RajSolai/Response"
+                            class="btn star"
+                        >
+                            <img
+                                class="star-img"
+                                src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMXB0IiB2aWV3Qm94PSIwIC0xMCA1MTEuOTg2ODUgNTExIiB3aWR0aD0iNTExcHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTUxMC42NTIzNDQgMTg1LjkwMjM0NGMtMy4zNTE1NjMtMTAuMzY3MTg4LTEyLjU0Njg3NS0xNy43MzA0NjktMjMuNDI1NzgyLTE4LjcxMDkzOGwtMTQ3Ljc3MzQzNy0xMy40MTc5NjgtNTguNDMzNTk0LTEzNi43Njk1MzJjLTQuMzA4NTkzLTEwLjAyMzQzNy0xNC4xMjEwOTMtMTYuNTExNzE4LTI1LjAyMzQzNy0xNi41MTE3MThzLTIwLjcxNDg0NCA2LjQ4ODI4MS0yNS4wMjM0MzggMTYuNTM1MTU2bC01OC40MzM1OTQgMTM2Ljc0NjA5NC0xNDcuNzk2ODc0IDEzLjQxNzk2OGMtMTAuODU5Mzc2IDEuMDAzOTA2LTIwLjAzMTI1IDguMzQzNzUtMjMuNDAyMzQ0IDE4LjcxMDkzOC0zLjM3MTA5NCAxMC4zNjcxODctLjI1NzgxMyAyMS43MzgyODEgNy45NTcwMzEgMjguOTA2MjVsMTExLjY5OTIxOSA5Ny45NjA5MzctMzIuOTM3NSAxNDUuMDg5ODQ0Yy0yLjQxMDE1NiAxMC42Njc5NjkgMS43MzA0NjggMjEuNjk1MzEzIDEwLjU4MjAzMSAyOC4wOTM3NSA0Ljc1NzgxMyAzLjQzNzUgMTAuMzI0MjE5IDUuMTg3NSAxNS45Mzc1IDUuMTg3NSA0LjgzOTg0NCAwIDkuNjQwNjI1LTEuMzA0Njg3IDEzLjk0OTIxOS0zLjg4MjgxM2wxMjcuNDY4NzUtNzYuMTgzNTkzIDEyNy40MjE4NzUgNzYuMTgzNTkzYzkuMzI0MjE5IDUuNjA5Mzc2IDIxLjA3ODEyNSA1LjA5NzY1NyAyOS45MTAxNTYtMS4zMDQ2ODcgOC44NTU0NjktNi40MTc5NjkgMTIuOTkyMTg3LTE3LjQ0OTIxOSAxMC41ODIwMzEtMjguMDkzNzVsLTMyLjkzNzUtMTQ1LjA4OTg0NCAxMTEuNjk5MjE5LTk3Ljk0MTQwNmM4LjIxNDg0NC03LjE4NzUgMTEuMzUxNTYzLTE4LjUzOTA2MyA3Ljk4MDQ2OS0yOC45MjU3ODF6bTAgMCIgZmlsbD0iI2ZmYzEwNyIvPjwvc3ZnPg=="
+                            />
+                            &nbsp;&nbsp;&nbsp;Star Repo
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
