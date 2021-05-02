@@ -38,7 +38,12 @@ public class AnotherMainView : Gtk.EventBox {
         var sg_fold = new LabelButton ("Galaxy Fold", false) ;
 
         go_btn.clicked.connect (() => {
-            thewebview.loadPage (uri.generateUri (url_entry)) ;
+            var url = uri.generateUri (url_entry) ;
+            if( url != "null" ){
+                thewebview.loadPage (url) ;
+            }else{
+                new EmptyUrlAlert();
+            }
         }) ;
 
         iphone_se.clicked.connect (() => {

@@ -15,5 +15,6 @@ sources = files (
     'services/urigen.vala',
     'services/useragents.vala',
 
-    'dialogs/aboutdialog.vala'
+    'dialogs/aboutdialog.vala',
+    'dialogs/emptyurlalert.vala'
 )
