@@ -5,11 +5,10 @@ class EmptyUrlAlert : Gtk.MessageDialog {
             text: "That Was an Empty Url 😥️ !",
             buttons: Gtk.ButtonsType.OK
             ) ;
-        var response = run();
-        if(response == Gtk.ResponseType.OK){
-            destroy();
+        var response = run () ;
+        if( response == Gtk.ResponseType.OK ){
+            destroy () ;
         }
-        destroy();
+        destroy () ;
     }
-
 }
