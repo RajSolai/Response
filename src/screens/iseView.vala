@@ -28,7 +28,7 @@ public class IseView : Gtk.EventBox {
         settings = new WebKit.Settings () ;
         settings.enable_developer_extras = true ;
         webview.set_settings (settings) ;
-        webview.load_uri ("https://rajsolai.github.io/lroton/") ;
+        webview.load_uri ("https://rajsolai.github.io/Response/") ;
         set_size_request (320, 568) ; // initial size
         add (webview) ;
     }
