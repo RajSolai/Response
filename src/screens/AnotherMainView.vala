@@ -37,6 +37,21 @@ public class AnotherMainView : Gtk.EventBox {
         var pixel_2 = new LabelButton ("Pixel 2", false) ;
         var sg_fold = new LabelButton ("Galaxy Fold", false) ;
 
+        //
+        var menu_list = new Gtk.Grid () ;
+        menu_list.orientation = Gtk.Orientation.VERTICAL;
+        menu_list.add (iphone_8) ;
+        menu_list.add (iphone_se) ;
+        menu_list.add (moto_g4) ;
+        menu_list.add (pixel_2) ;
+        menu_list.add (sg_fold) ;
+        menu_list.show_all () ;
+        var popover = new Gtk.Popover (null) ;
+        popover.add (menu_list) ;
+        var menu_button = new Gtk.MenuButton () ;
+        menu_button.popover = popover ;
+        //
+
         go_btn.clicked.connect (() => {
             var url = uri.generateUri (url_entry) ;
             if( url != "null" ){
@@ -68,17 +83,19 @@ public class AnotherMainView : Gtk.EventBox {
         }) ;
 
 
-        device_box0.add (iphone_8) ;
-        device_box0.add (iphone_se) ;
-        device_box0.add (pixel_2) ;
-        device_box1.add (moto_g4) ;
-        device_box1.add (sg_fold) ;
+        // device_box0.add (iphone_8) ;
+        // device_box0.add (iphone_se) ;
+        // device_box0.add (pixel_2) ;
+        // device_box1.add (moto_g4) ;
+        // device_box1.add (sg_fold) ;
+        device_box1.add (menu_button) ;
+
 
         entry_box.pack_start (url_entry, true, true, 5) ;
         entry_box.pack_start (go_btn, true, true, 5) ;
 
         main_grid.add (entry_box) ;
-        main_grid.add (device_box0) ;
+       // main_grid.add (device_box0) ;
         main_grid.add (device_box1) ;
         main_grid.add (thewebview) ;
 
