@@ -42,7 +42,7 @@ public class AnotherMainView : Gtk.EventBox {
             if( url != "null" ){
                 thewebview.loadPage (url) ;
             }else{
-                new EmptyUrlAlert();
+                new EmptyUrlAlert(parent_window);
             }
         }) ;
 

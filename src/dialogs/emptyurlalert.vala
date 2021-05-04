@@ -1,6 +1,7 @@
 class EmptyUrlAlert : Gtk.MessageDialog {
-    public EmptyUrlAlert () {
+    public EmptyUrlAlert (Gtk.Window parent_window) {
         Object (
+            parent: parent_window,
             message_type: Gtk.MessageType.WARNING,
             text: "That Was an Empty Url 😥️ !",
             buttons: Gtk.ButtonsType.OK
