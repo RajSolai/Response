@@ -8,7 +8,5 @@ class MainWindow : Gtk.Window {
         add (main_view) ;
         show_all();
     }
-
-
     
 }

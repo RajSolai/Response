@@ -21,8 +21,7 @@
 
 public class Application : Gtk.Application {
 
-    AnotherMainView main_view ;
-    MainWindow main_window = null;
+    private MainWindow main_window = null;
 
     public Application () {
         Object (
@@ -41,15 +40,9 @@ public class Application : Gtk.Application {
         provider.load_from_resource ("/com/github/rajsolai/response/stylesheet.css") ;
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION) ;
 
-        //
         main_window = new MainWindow (this) ;
         add_window(main_window);
-        //
       
-        // main_window.set_titlebar (header_bar) ;
-        // main_window.title = "Response" ;
-        // main_window.add (main_view) ;
-        // main_window.show_all () ;
     }
 
     public static int main(string[] args) {

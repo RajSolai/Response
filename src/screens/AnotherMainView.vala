@@ -52,7 +52,6 @@ public class AnotherMainView : Gtk.EventBox {
         }) ;
         iphone_8.clicked.connect (() => {
             thewebview.resizePage (375, 667, ua.iphone_8) ;
-            print(parent_window.resizable?"true":"false");
             parent_window.resize(375,667);
         }) ;
         moto_g4.clicked.connect (() => {
