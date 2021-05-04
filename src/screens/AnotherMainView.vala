@@ -21,7 +21,7 @@
 public class AnotherMainView : Gtk.EventBox {
 
 
-    public AnotherMainView () {
+    public AnotherMainView (Gtk.Window parent_window) {
         var uri = new UriGen () ;
         var ua = new UserAgents () ;
         var thewebview = new IseView () ;
@@ -48,18 +48,24 @@ public class AnotherMainView : Gtk.EventBox {
 
         iphone_se.clicked.connect (() => {
             thewebview.resizePage (320, 568, ua.iphone_se) ;
+            parent_window.resize(320,568);
         }) ;
         iphone_8.clicked.connect (() => {
             thewebview.resizePage (375, 667, ua.iphone_8) ;
+            print(parent_window.resizable?"true":"false");
+            parent_window.resize(375,667);
         }) ;
         moto_g4.clicked.connect (() => {
             thewebview.resizePage (360, 640, ua.moto_g4) ;
+            parent_window.resize(360,640);
         }) ;
         pixel_2.clicked.connect (() => {
             thewebview.resizePage (411, 731, ua.pixel_2) ;
+            parent_window.resize(411,731);
         }) ;
         sg_fold.clicked.connect (() => {
             thewebview.resizePage (280, 650, ua.sg_fold) ;
+            parent_window.resize(280,650);
         }) ;
 
 

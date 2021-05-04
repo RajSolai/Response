@@ -1,6 +1,7 @@
 # Listing files to compile
 sources = files (
     'Application.vala',
+    'MainWindow.vala',
 
     'screens/iseView.vala',
     'screens/AnotherMainView.vala',
