@@ -6,3 +6,5 @@
 /debian/com.github.rajsolai.response.substvars
 /debian/com.github.rajsolai.response
 /debian/files
+
+com.github.rajsolai.response.yml
