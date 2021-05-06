@@ -7,7 +7,7 @@ public class About : Gtk.AboutDialog {
             comments : "Test your web page's Responsiveness ! 👨‍💻️" ,
             website : "https://github.com/RajSolai/Response/",
             website_label : "Visit Response",
-            version : "1.0.0" 
+            version : "1.0.1" 
         );
 
         response.connect ((response_id) => {

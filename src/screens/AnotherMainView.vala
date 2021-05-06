@@ -95,6 +95,7 @@ public class AnotherMainView : Gtk.EventBox {
         // device_box0.add (pixel_2) ;
         // device_box1.add (moto_g4) ;
         // device_box1.add (sg_fold) ;
+        device_box1.add(new Gtk.Label("Select Device : "));
         device_box1.add (menu_button) ;
 
 
