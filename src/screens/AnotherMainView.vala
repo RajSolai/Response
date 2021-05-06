@@ -31,15 +31,22 @@ public class AnotherMainView : Gtk.EventBox {
         var device_box0 = new HorizontalBox (3) ;
         var device_box1 = new HorizontalBox (3) ;
         var go_btn = new LabelButton ("Check", true) ;
-        var iphone_se = new LabelButton ("iPhone SE", false) ;
-        var moto_g4 = new LabelButton ("Moto G4", false) ;
-        var iphone_8 = new LabelButton ("iPhone 8", false) ;
-        var pixel_2 = new LabelButton ("Pixel 2", false) ;
-        var sg_fold = new LabelButton ("Galaxy Fold", false) ;
+        var sample = new Gtk.ModelButton () ;
+        var iphone_se = new Gtk.ModelButton () ;
+        var moto_g4 = new Gtk.ModelButton () ;
+        var iphone_8 = new Gtk.ModelButton () ;
+        var pixel_2 = new Gtk.ModelButton () ;
+        var sg_fold = new Gtk.ModelButton () ;
+
+        iphone_se.text = "iPhone SE" ;
+        moto_g4.text = "Moto G4" ;
+        iphone_8.text = "iPhone 8" ;
+        pixel_2.text = "Pixel 2" ;
+        sg_fold.text = "Galaxy Fold" ;
 
         //
         var menu_list = new Gtk.Grid () ;
-        menu_list.orientation = Gtk.Orientation.VERTICAL;
+        menu_list.orientation = Gtk.Orientation.VERTICAL ;
         menu_list.add (iphone_8) ;
         menu_list.add (iphone_se) ;
         menu_list.add (moto_g4) ;
@@ -56,30 +63,30 @@ public class AnotherMainView : Gtk.EventBox {
             var url = uri.generateUri (url_entry) ;
             if( url != "null" ){
                 thewebview.loadPage (url) ;
-            }else{
-                new EmptyUrlAlert(parent_window);
+            } else {
+                new EmptyUrlAlert (parent_window) ;
             }
         }) ;
 
         iphone_se.clicked.connect (() => {
             thewebview.resizePage (320, 568, ua.iphone_se) ;
-            parent_window.resize(320,568);
+            parent_window.resize (320, 568) ;
         }) ;
         iphone_8.clicked.connect (() => {
             thewebview.resizePage (375, 667, ua.iphone_8) ;
-            parent_window.resize(375,667);
+            parent_window.resize (375, 667) ;
         }) ;
         moto_g4.clicked.connect (() => {
             thewebview.resizePage (360, 640, ua.moto_g4) ;
-            parent_window.resize(360,640);
+            parent_window.resize (360, 640) ;
         }) ;
         pixel_2.clicked.connect (() => {
             thewebview.resizePage (411, 731, ua.pixel_2) ;
-            parent_window.resize(411,731);
+            parent_window.resize (411, 731) ;
         }) ;
         sg_fold.clicked.connect (() => {
             thewebview.resizePage (280, 650, ua.sg_fold) ;
-            parent_window.resize(280,650);
+            parent_window.resize (280, 650) ;
         }) ;
 
 
@@ -95,7 +102,7 @@ public class AnotherMainView : Gtk.EventBox {
         entry_box.pack_start (go_btn, true, true, 5) ;
 
         main_grid.add (entry_box) ;
-       // main_grid.add (device_box0) ;
+        // main_grid.add (device_box0) ;
         main_grid.add (device_box1) ;
         main_grid.add (thewebview) ;
 
