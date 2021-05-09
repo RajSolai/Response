@@ -6,6 +6,7 @@ class MainGrid : Gtk.Grid {
             orientation: Gtk.Orientation.VERTICAL,
             row_spacing: 3
             ) ;
+        get_style_context ().add_class ("main-grid") ;
     }
 
 }
