@@ -35,6 +35,8 @@ public class AnotherMainView : Gtk.EventBox {
         var iphone_8 = new Gtk.ModelButton () ;
         var pixel_2 = new Gtk.ModelButton () ;
         var sg_fold = new Gtk.ModelButton () ;
+        var sizes = new SizeChart () ;
+        var resizemech = new ResizeMech () ;
 
         iphone_se.text = "iPhone SE" ;
         moto_g4.text = "Moto G4" ;
@@ -66,19 +68,39 @@ public class AnotherMainView : Gtk.EventBox {
         }) ;
 
         iphone_se.clicked.connect (() => {
-            new ResizeMech ().resize (thewebview, parent_window, 320, 568, ua.iphone_se) ;
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.iphone_se[0],
+                               sizes.iphone_se[1],
+                               ua.iphone_se) ;
         }) ;
         iphone_8.clicked.connect (() => {
-            new ResizeMech ().resize (thewebview, parent_window, 375, 667, ua.iphone_8) ;
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.iphone_8[0],
+                               sizes.iphone_8[1],
+                               ua.iphone_8) ;
         }) ;
         moto_g4.clicked.connect (() => {
-            new ResizeMech ().resize (thewebview, parent_window, 360, 640, ua.moto_g4) ;
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.moto_g4[0],
+                               sizes.moto_g4[1],
+                               ua.moto_g4) ;
         }) ;
         pixel_2.clicked.connect (() => {
-            new ResizeMech ().resize (thewebview, parent_window, 411, 731, ua.pixel_2) ;
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.pixel_2[0],
+                               sizes.pixel_2[1],
+                               ua.pixel_2) ;
         }) ;
         sg_fold.clicked.connect (() => {
-            new ResizeMech ().resize (thewebview, parent_window, 280, 650, ua.sg_fold) ;
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.sg_fold[0],
+                               sizes.sg_fold[1],
+                               ua.sg_fold) ;
         }) ;
 
         device_box.add (new Gtk.Label ("  Select Device : ")) ;
