@@ -12,7 +12,6 @@ sources = files (
     'widgets/labelbutton.vala',
     'widgets/urlentry.vala',
     'widgets/infobutton.vala',
-    'widgets/popbutton.vala',
 
     'services/urigen.vala',
     'services/useragents.vala',
