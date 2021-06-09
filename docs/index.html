@@ -4,11 +4,29 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Test website's Responsiveness in Linux Desktop"
+        />
+        <meta
+            name="keywords"
+            content="linux,Gtk,Response,Response App,Web Response"
+        />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <title>Response - Test Responsiveness</title>
         <style>
             :root {
-                font-family: sans-serif;
+                font-family: "Inter", sans-serif;
                 font-size: 16px;
+            }
+            .snapshot {
+                content: url("../data/screenshots/main_screen_light.png");
+                transition: ease-in-out 0.3ms;
             }
             .main {
                 display: flex;
@@ -52,18 +70,31 @@
             .download-img {
                 height: 24px;
             }
-            .header-icon{
+            .header-icon {
                 margin-top: 2rem;
                 text-align: center;
             }
             .star-img {
                 height: 24px;
             }
-            .desc , .title {
+            .desc,
+            .title {
                 text-align: center;
+            }
+            .title {
+                font-weight: bold;
             }
             .img-cover {
                 display: none;
+            }
+            @media screen and (prefers-color-scheme: dark) {
+                body {
+                    background-color: #1a1a1a;
+                    color: #fafafa;
+                }
+                .snapshot {
+                    content: url("../data/screenshots/main_screen_dark.png") !important;
+                }
             }
             @media screen and (min-width: 700px) {
                 .desc,
@@ -88,7 +119,7 @@
                 .main-child {
                     margin-top: -19rem;
                 }
-                .header-icon{
+                .header-icon {
                     display: none;
                 }
             }
@@ -134,7 +165,8 @@
             </div>
             <div class="img-cover">
                 <img
-                    src="https://raw.githubusercontent.com/RajSolai/Response/master/data/screenshots/main_screen.png"
+                    class="snapshot"
+                    src=""
                     alt="Response Mail Screen screenshot"
                 />
             </div>
