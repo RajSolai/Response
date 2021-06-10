@@ -21,7 +21,7 @@
 
 public class Application : Gtk.Application {
 
-    private MainWindow main_window = null;
+    private MainWindow main_window = null ;
 
     public Application () {
         Object (
@@ -41,8 +41,8 @@ public class Application : Gtk.Application {
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION) ;
 
         main_window = new MainWindow (this) ;
-        add_window(main_window);
-      
+        add_window (main_window) ;
+
     }
 
     public static int main(string[] args) {
