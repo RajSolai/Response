@@ -24,4 +24,5 @@ class SizeChart {
     public int[] moto_g4 = { 360, 640 } ;
     public int[] pixel_2 = { 411, 731 } ;
     public int[] sg_fold = { 280, 650 } ;
+    public int[] desktop = { 1120,630 } ;
 }

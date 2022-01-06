@@ -22,7 +22,7 @@ public class CustomHeaderBar : Gtk.HeaderBar {
 
     public CustomHeaderBar () {
         get_style_context ().add_class ("default-decoration") ;
-        get_style_context ().add_class ("flat") ;
+        // get_style_context ().add_class ("flat") ;
         var infobtn = new InfoButton () ;
         var mode_switch = new Granite.ModeSwitch.from_icon_name ("display-brightness-symbolic", "weather-clear-night-symbolic") ;
         var gtk_settings = Gtk.Settings.get_default () ;

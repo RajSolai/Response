@@ -34,6 +34,7 @@ public class AnotherMainView : Gtk.EventBox {
         var moto_g4 = new Gtk.ModelButton () ;
         var iphone_8 = new Gtk.ModelButton () ;
         var pixel_2 = new Gtk.ModelButton () ;
+        var desktop = new Gtk.ModelButton () ;
         var sg_fold = new Gtk.ModelButton () ;
         var sizes = new SizeChart () ;
         var resizemech = new ResizeMech () ;
@@ -42,6 +43,7 @@ public class AnotherMainView : Gtk.EventBox {
         moto_g4.text = "Moto G4" ;
         iphone_8.text = "iPhone 8" ;
         pixel_2.text = "Pixel 2" ;
+        desktop.text = "Desktop" ;
         sg_fold.text = "Galaxy Fold" ;
 
         var menu_list = new Gtk.Grid () ;
@@ -50,6 +52,7 @@ public class AnotherMainView : Gtk.EventBox {
         menu_list.add (iphone_se) ;
         menu_list.add (moto_g4) ;
         menu_list.add (pixel_2) ;
+        menu_list.add (desktop) ;
         menu_list.add (sg_fold) ;
         menu_list.show_all () ;
         var popover = new Gtk.Popover (null) ;
@@ -94,6 +97,13 @@ public class AnotherMainView : Gtk.EventBox {
                                sizes.pixel_2[0],
                                sizes.pixel_2[1],
                                ua.pixel_2) ;
+        }) ;
+        desktop.clicked.connect (() => {
+            resizemech.resize (thewebview,
+                               parent_window,
+                               sizes.desktop[0],
+                               sizes.desktop[1],
+                               ua.sg_fold) ;
         }) ;
         sg_fold.clicked.connect (() => {
             resizemech.resize (thewebview,
