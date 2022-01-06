@@ -22,6 +22,25 @@
 public class Application : Gtk.Application {
 
     private MainWindow main_window = null ;
+    private const string BRAND_STYLESHEET = """
+        .main-grid{
+            margin: 2px;
+            margin-top: 5px;
+        }
+        .h-box{
+            padding-left: 3px;
+        }    
+        @define-color color_primary #F47340;
+        @define-color accent_color @color_primary;
+        .title, .titlebutton, .image-button {
+            color: #f2f2f2;
+            text-shadow: 0 1px #b52136;
+        }
+        /* elementary OS 5 backwards compatibility */
+        @define-color colorPrimary @color_primary;
+        @define-color textColorPrimary #f2f2f2;
+        @define-color textColorPrimaryShadow #7b1b29;
+    """;
 
     public Application () {
         Object (
@@ -37,8 +56,12 @@ public class Application : Gtk.Application {
 
         // stylesheet
         var provider = new Gtk.CssProvider () ;
-        provider.load_from_resource ("/com/github/rajsolai/response/stylesheet.css") ;
+        try{
+            provider.load_from_data (BRAND_STYLESHEET, -1) ;
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION) ;
+        }catch(Error e){
+            warning (e.message);
+        }
 
         main_window = new MainWindow (this) ;
         add_window (main_window) ;
