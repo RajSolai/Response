@@ -1,4 +1,10 @@
-com.github.rajsolai.response (1.1.0) UNRELEASED; urgency=high
+com.github.rajsolai.response (1.1.1) RELEASED; urgency=high
+
+  * Added Desktop size* 
+
+ -- solairaj <solairaj@solairaj-ideapad>  Thu Jan 6 06:10:04 +0530
+
+com.github.rajsolai.response (1.1.0) RELEASED; urgency=high
 
   * Newer Window and Dropdown* 
 
