@@ -2,7 +2,7 @@
 project (
     'com.github.rajsolai.response',
     'vala', 'c',
-    version: '1.1.0'
+    version: '1.1.1'
 )
 
 # Translation module
