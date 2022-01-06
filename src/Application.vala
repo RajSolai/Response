@@ -30,11 +30,11 @@ public class Application : Gtk.Application {
         .h-box{
             padding-left: 3px;
         }    
-        @define-color color_primary #F47340;
+        @define-color color_primary #393955;
         @define-color accent_color @color_primary;
         .title, .titlebutton, .image-button {
             color: #f2f2f2;
-            text-shadow: 0 1px #b52136;
+            text-shadow: 0 1px #202025;
         }
         /* elementary OS 5 backwards compatibility */
         @define-color colorPrimary @color_primary;

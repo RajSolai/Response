@@ -35,6 +35,7 @@ as_resources = gnome.compile_resources (
 executable (
     meson.project_name (),
     sources,
+    as_resources,
     dependencies: dependencies,
     install: true
 )
