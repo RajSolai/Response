@@ -6,7 +6,7 @@ And build Mobile first Websites with less resource hog :)
 
 <a href='https://flathub.org/apps/details/com.github.rajsolai.response'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
 
-![Main Screen on Response](./data/screenshots/main_screen.png "Main Screen of Response")
+![Main Screen on Response](./data/screenshots/app_normal_mobile.png "Main Screen of Response")
 
 <!-- ## Get it from the elementary OS AppCenter!
 
