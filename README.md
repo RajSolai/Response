@@ -14,9 +14,9 @@ And build Mobile first Websites with less resource hog :)
 
 ⏰️ Soon this app will be available on the elementary OS AppCenter.
 
-# 👨‍💻️ Install it from source
+## Support Me
 
-You can of course download and install this app from source.
+<a href="https://www.buymeacoffee.com/rajsolai" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 200px;" ></a>
 
 ## Dependencies
 
