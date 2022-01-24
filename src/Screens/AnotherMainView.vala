@@ -29,7 +29,7 @@ public class AnotherMainView : Gtk.EventBox {
         var url_entry = new UrlEntry () ;
         var entry_box = new HorizontalBox (5) ;
         var device_box = new HorizontalBox (3) ;
-        var go_btn = new LabelButton ("Check", true) ;
+        var go_btn = new LabelButton (_("Check"), true) ;
         var iphone_se = new Gtk.ModelButton () ;
         var moto_g4 = new Gtk.ModelButton () ;
         var iphone_8 = new Gtk.ModelButton () ;
@@ -39,12 +39,12 @@ public class AnotherMainView : Gtk.EventBox {
         var sizes = new SizeChart () ;
         var resizemech = new ResizeMech () ;
 
-        iphone_se.text = "iPhone SE" ;
-        moto_g4.text = "Moto G4" ;
-        iphone_8.text = "iPhone 8" ;
-        pixel_2.text = "Pixel 2" ;
-        desktop.text = "Desktop" ;
-        sg_fold.text = "Galaxy Fold" ;
+        iphone_se.text = _("iPhone SE") ;
+        moto_g4.text = _("Moto G4") ;
+        iphone_8.text = _("iPhone 8") ;
+        pixel_2.text = _("Pixel 2") ;
+        desktop.text = _("Desktop") ;
+        sg_fold.text = _("Galaxy Fold") ;
 
         var menu_list = new Gtk.Grid () ;
         menu_list.orientation = Gtk.Orientation.VERTICAL ;
@@ -113,7 +113,7 @@ public class AnotherMainView : Gtk.EventBox {
                                ua.sg_fold) ;
         }) ;
 
-        device_box.add (new Gtk.Label ("  Select Device : ")) ;
+        device_box.add (new Gtk.Label ("  " + _("Select Device :") + " ")) ;
         device_box.add (menu_button) ;
 
         entry_box.pack_start (url_entry, true, true, 5) ;

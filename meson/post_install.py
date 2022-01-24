@@ -4,8 +4,8 @@ from os import path, environ
 import subprocess
 
 prefix = environ.get('MESON_INSTALL_PREFIX', '/usr/local')
-schemadir = path.join(environ['MESON_INSTALL_PREFIX'], 'share', 'glib-2.0', 'schemas')
 datadir = path.join(prefix, 'share')
+schemadir = path.join(datadir, 'share', 'glib-2.0', 'schemas')
 desktop_database_dir = path.join(datadir, 'applications')
 
 if not environ.get('DESTDIR'):

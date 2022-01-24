@@ -22,13 +22,13 @@ public class About : Gtk.AboutDialog {
 
     public About () {
         Object (
-            program_name: "Response",
+            program_name: _("Response"),
             logo_icon_name: "com.github.rajsolai.response",
-            comments: "Test your web page's Responsiveness ! 👨‍💻️",
+            comments: _("Test your web page's Responsiveness ! 👨‍💻️"),
             website: "https://github.com/RajSolai/Response/",
-            website_label: "Visit Response",
+            website_label: _("Visit Response"),
             version: "1.1.1"
-            ) ;
+        ) ;
 
         response.connect ((response_id) => {
             if( response_id == Gtk.ResponseType.CANCEL || response_id == Gtk.ResponseType.DELETE_EVENT ){

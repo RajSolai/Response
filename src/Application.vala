@@ -46,7 +46,7 @@ public class Application : Gtk.Application {
         Object (
             application_id: "com.github.rajsolai.response",
             flags : ApplicationFlags.FLAGS_NONE
-            ) ;
+        );
     }
 
     protected override void activate() {

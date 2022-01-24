@@ -25,8 +25,8 @@ dependencies = [
 
 subdir ('src')
 
-as_resources = gnome.compile_resources (
-    'as-resources', 'data/' + meson.project_name() + '.gresource.xml',
+gresource = gnome.compile_resources (
+    'gesource', 'data/' + meson.project_name() + '.gresource.xml',
     source_dir: 'data',
     c_name: 'as'
 )
@@ -35,7 +35,7 @@ as_resources = gnome.compile_resources (
 executable (
     meson.project_name (),
     sources,
-    as_resources,
+    gresource,
     dependencies: dependencies,
     install: true
 )
