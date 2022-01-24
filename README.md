@@ -18,9 +18,7 @@ And build Mobile first Websites with less resource hog :)
 
 Ensure you have these dependencies installed
 
--   granite
 -   gtk+-3.0
--   switchboard-2.0
 -   webkit2gtk-4.0
 
 ## Install, build and run
@@ -28,6 +26,8 @@ Ensure you have these dependencies installed
 ```bash
 # install elementary-sdk, meson and ninja
 sudo apt install elementary-sdk meson ninja
+# install webkit-gtk (webview for GTK)
+sudo apt install libwebkit2gtk-4.0-dev
 # clone repository
 git clone https://github.com/RajSolai/Response
 # cd to dir
@@ -37,4 +37,16 @@ meson build --prefix=/usr
 # cd to build, build and test
 cd build
 sudo ninja install && com.github.rajsolai.response
+```
+## Build flatpak locally
+
+``` bash
+# install elementary os runtime (version 6)
+flatpak install io.elementary.Sdk 
+
+# clone repository
+git clone https://github.com/RajSolai/Response
+
+# run the build script
+sh start.sh
 ```
