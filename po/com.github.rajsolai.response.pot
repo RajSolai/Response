@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.rajsolai.response package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.rajsolai.response\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-24 18:00+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/MainWindow.vala:26 src/Dialogs/AboutDialog.vala:25
+msgid "Response"
+msgstr ""
+
+#: src/Dialogs/AboutDialog.vala:27
+msgid "Test your web page's Responsiveness ! 👨‍💻️"
+msgstr ""
+
+#: src/Dialogs/AboutDialog.vala:29
+msgid "Visit Response"
+msgstr ""
+
+#: src/Dialogs/EmptyUrlAlert.vala:26
+msgid "That Was an Empty Url 😥️ !"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:32
+msgid "Check"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:42
+msgid "iPhone SE"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:43
+msgid "Moto G4"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:44
+msgid "iPhone 8"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:45
+msgid "Pixel 2"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:46
+msgid "Desktop"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:47
+msgid "Galaxy Fold"
+msgstr ""
+
+#: src/Screens/AnotherMainView.vala:116
+msgid "Select Device :"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:29
+msgid "Light Mode"
+msgstr ""
+
+#: src/Widgets/HeaderBar.vala:30
+msgid "Dark Mode"
+msgstr ""
+
+#: src/Widgets/UrlEntry.vala:24
+msgid "Enter the Url here…"
+msgstr ""

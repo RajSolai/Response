@@ -1,1 +1,9 @@
-src/Application.vala
+src/MainWindow.vala
+
+src/Dialogs/AboutDialog.vala
+src/Dialogs/EmptyUrlAlert.vala
+
+src/Screens/AnotherMainView.vala
+
+src/Widgets/HeaderBar.vala
+src/Widgets/UrlEntry.vala

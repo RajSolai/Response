@@ -3,21 +3,21 @@ sources = files (
     'Application.vala',
     'MainWindow.vala',
 
-    'screens/iseView.vala',
-    'screens/AnotherMainView.vala',
+    'Dialogs/AboutDialog.vala',
+    'Dialogs/EmptyUrlAlert.vala',
 
-    'widgets/headerbar.vala',
-    'widgets/maingrid.vala',
-    'widgets/horizontalbox.vala',
-    'widgets/labelbutton.vala',
-    'widgets/urlentry.vala',
-    'widgets/infobutton.vala',
+    'Screens/AnotherMainView.vala',
+    'Screens/IseView.vala',
 
-    'services/urigen.vala',
-    'services/useragents.vala',
-    'services/resize.vala',
-    'services/sizechart.vala',
+    'Services/Resize.vala',
+    'Services/SizeChart.vala',
+    'Services/UriGen.vala',
+    'Services/UserAgents.vala',
 
-    'dialogs/aboutdialog.vala',
-    'dialogs/emptyurlalert.vala'
+    'Widgets/HeaderBar.vala',
+    'Widgets/HorizontalBox.vala',
+    'Widgets/InfoButton.vala',
+    'Widgets/LabelButton.vala',
+    'Widgets/MainGrid.vala',
+    'Widgets/UrlEntry.vala'
 )
