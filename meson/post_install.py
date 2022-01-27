@@ -9,8 +9,6 @@ schemadir = path.join(datadir, 'share', 'glib-2.0', 'schemas')
 desktop_database_dir = path.join(datadir, 'applications')
 
 if not environ.get('DESTDIR'):
-    print('Compiling gsettings schemas…')
-    subprocess.call(['glib-compile-schemas', schemadir])
     print('Updating desktop database…')
     subprocess.call(['update-desktop-database', '-q', desktop_database_dir])
     print('Updating icon cache…')
