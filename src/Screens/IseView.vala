@@ -22,24 +22,38 @@ public class IseView : Gtk.EventBox {
 
     private WebKit.WebView webview ;
     private WebKit.Settings settings ;
+    private current_url = ""https://rajsolai.github.io/Response/"";
 
     public IseView () {
         webview = new WebKit.WebView () ;
         settings = new WebKit.Settings () ;
         settings.enable_developer_extras = true ;
         webview.set_settings (settings) ;
-        webview.load_uri ("https://rajsolai.github.io/Response/") ;
+        webview.load_uri (current_url) ;
         set_size_request (300, 500) ; // initial size
         add (webview) ;
     }
 
     public void loadPage(string url) {
-        webview.load_uri (url) ;
+        curren_url = url;
+        refresh_page();
     }
 
     public void resizePage(int width, int height, string ua) {
         set_size_request (width, height) ;
         settings.user_agent = ua ;
+    }
+    
+    public void refresh_page () {
+        webview.load_uri (current_url) ;
+    }
+    
+    public void move_forward () {
+        webview.go_back();
+    }
+    
+    public void move_back () {
+        webview.go_forward();
     }
 
 }
