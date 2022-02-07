@@ -23,23 +23,16 @@ public class Application : Gtk.Application {
 
     private MainWindow main_window = null ;
     private const string BRAND_STYLESHEET = """
-        .main-grid{
+        .main-grid {
             margin: 2px;
             margin-top: 5px;
         }
-        .h-box{
+        .h-box {
             padding-left: 3px;
-        }    
-        @define-color color_primary #393955;
-        @define-color accent_color @color_primary;
-        .title, .titlebutton, .image-button {
-            color: #f2f2f2;
-            text-shadow: 0 1px #202025;
         }
-        /* elementary OS 5 backwards compatibility */
-        @define-color colorPrimary @color_primary;
-        @define-color textColorPrimary #f2f2f2;
-        @define-color textColorPrimaryShadow #7b1b29;
+        .control-box {
+            margin-left: 1rem;
+        }    
     """;
 
     public Application () {

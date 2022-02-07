@@ -27,11 +27,15 @@ public class AnotherMainView : Gtk.EventBox {
         var thewebview = new IseView () ;
         var main_grid = new MainGrid () ;
         var url_entry = new UrlEntry () ;
+        var control_box = new HorizontalBox (1);
         var entry_box = new HorizontalBox (5) ;
         var device_box = new HorizontalBox (3) ;
-        var refresh_btn = new Gtk.Button.with_label("r");
-        var forward_btn = new Gtk.Button.with_label("f");
-        var back_btn = new Gtk.Button.with_label("b");
+        var refresh_btn = new Gtk.Button
+            .from_icon_name("view-refresh",Gtk.IconSize.SMALL_TOOLBAR);
+        var forward_btn = new Gtk.Button
+            .from_icon_name("go-next",Gtk.IconSize.SMALL_TOOLBAR);
+        var back_btn = new Gtk.Button
+            .from_icon_name("go-previous",Gtk.IconSize.SMALL_TOOLBAR);
         var go_btn = new LabelButton (_("Check"), true) ;
         var iphone_se = new Gtk.ModelButton () ;
         var moto_g4 = new Gtk.ModelButton () ;
@@ -115,12 +119,16 @@ public class AnotherMainView : Gtk.EventBox {
                                sizes.sg_fold[1],
                                ua.sg_fold) ;
         }) ;
+        
+        control_box.get_style_context().add_class("control-box");
+        
+        control_box.add (back_btn) ;
+        control_box.add (refresh_btn) ;
+        control_box.add (forward_btn) ;
 
         device_box.add (new Gtk.Label ("  " + _("Select Device :") + " ")) ;
         device_box.add (menu_button) ;
-        device_box.add (back_btn) ;
-        device_box.add (refresh_btn) ;
-        device_box.add (forward_btn) ;
+        device_box.pack_end (control_box) ;
 
         entry_box.pack_start (url_entry, true, true, 5) ;
         entry_box.pack_start (go_btn, true, true, 5) ;
