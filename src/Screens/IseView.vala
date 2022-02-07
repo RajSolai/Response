@@ -22,7 +22,7 @@ public class IseView : Gtk.EventBox {
 
     private WebKit.WebView webview ;
     private WebKit.Settings settings ;
-    private current_url = "https://rajsolai.github.io/Response/";
+    private string current_url = "https://rajsolai.github.io/Response/";
 
     public IseView () {
         webview = new WebKit.WebView () ;
