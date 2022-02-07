@@ -35,7 +35,7 @@ public class IseView : Gtk.EventBox {
     }
 
     public void loadPage(string url) {
-        curren_url = url;
+        current_url = url;
         refresh_page();
     }
 
