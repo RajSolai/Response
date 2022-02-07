@@ -29,6 +29,9 @@ public class AnotherMainView : Gtk.EventBox {
         var url_entry = new UrlEntry () ;
         var entry_box = new HorizontalBox (5) ;
         var device_box = new HorizontalBox (3) ;
+        var refresh_btn = new Gtk.Button.with_label("r");
+        var forward_btn = new Gtk.Button.with_label("f");
+        var back_btn = new Gtk.Button.with_label("b");
         var go_btn = new LabelButton (_("Check"), true) ;
         var iphone_se = new Gtk.ModelButton () ;
         var moto_g4 = new Gtk.ModelButton () ;
