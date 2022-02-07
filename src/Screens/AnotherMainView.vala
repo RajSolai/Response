@@ -118,6 +118,9 @@ public class AnotherMainView : Gtk.EventBox {
 
         device_box.add (new Gtk.Label ("  " + _("Select Device :") + " ")) ;
         device_box.add (menu_button) ;
+        device_box.add (back_btn) ;
+        device_box.add (refresh_btn) ;
+        device_box.add (forward_btn) ;
 
         entry_box.pack_start (url_entry, true, true, 5) ;
         entry_box.pack_start (go_btn, true, true, 5) ;
