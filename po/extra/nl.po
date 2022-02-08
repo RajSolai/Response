@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 13:59+0100\n"
+"PO-Revision-Date: 2022-02-08 12:23+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/com.github.rajsolai.response.desktop.in:4
+#: data/com.github.rajsolai.response.desktop.in:6
+#: data/com.github.rajsolai.response.appdata.xml.in:7
+msgid "Response"
+msgstr "Response"
+
+#: data/com.github.rajsolai.response.desktop.in:5
+#: data/com.github.rajsolai.response.appdata.xml.in:8
+msgid "Test your web page's Responsiveness"
+msgstr "Bekijk hoe je website zich aanpast aan verschillende schermgroottes"
+
+#: data/com.github.rajsolai.response.desktop.in:8
+msgid "com.github.rajsolai.response"
+msgstr "com.github.rajsolai.response"
+
+#: data/com.github.rajsolai.response.desktop.in:11
+msgid "Response;"
+msgstr "Response;Scherm;Website;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:10
+msgid "Cool and Less resource hogging way to check webpage responsiveness."
+msgstr "Een toffe en niet-veeleisende manier om te bekijken hoe je website zich aanpast aan verschillende schermgroottes."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:12
+msgid "Minimal UI 🎨️."
+msgstr "Minimale vormgeving 🎨️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:13
+msgid "Low resource consumption 🍰️."
+msgstr "Weinig veeleisend 🍰️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:14
+msgid "Single Tab based Configuration 👨‍💻️."
+msgstr "Alle instellingen op één tabblad 👨‍💻️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:20
+msgid "Solai Raj"
+msgstr "Solai Raj"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:64
+msgid "v1.1.1"
+msgstr "v1.1.1"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:66
+msgid "- New Icon"
+msgstr "- Nieuw pictogram;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:67
+msgid "- Added a landscape size"
+msgstr "- Horizontale modus toegevoegd;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:68
+msgid "- Optimizations for elementary OS"
+msgstr "- Optimalisaties voor elementary OS."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:74
+msgid "v1.1.0"
+msgstr "v1.1.0"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:76
+msgid "- New Window Method"
+msgstr "- Nieuwe venstermethode;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:77
+msgid "- Rounded Windows"
+msgstr "- Afgeronde vensterhoeken;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:78
+msgid "- Dropdown to select Device"
+msgstr "- Uitrolmenu om een apparaat te kiezen;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:79
+msgid "- Bug Fix and Optimizations"
+msgstr "- Bugs opgelost en prestaties verbeterd."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:86
+msgid "Initial Release"
+msgstr "Eerste uitgave"
