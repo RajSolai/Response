@@ -18,7 +18,7 @@
  *
  * Authored by: solairaj <msraj085@gmail.com>
  */
-public class CustomHeaderBar : Gtk.HeaderBar {
+public class CustomHeaderBar : Hdy.HeaderBar {
 
     public CustomHeaderBar () {
         get_style_context ().add_class ("flat") ;
