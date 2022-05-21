@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# ALBANO BATTISTELLA <ALBANO_BATTISTELLA@HOTMAIL.COM>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 13:59+0100\n"
+"PO-Revision-Date: 2022-05-21 15:30+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.rajsolai.response.desktop.in:4
+#: data/com.github.rajsolai.response.desktop.in:6
+#: data/com.github.rajsolai.response.appdata.xml.in:7
+msgid "Response"
+msgstr "Response"
+
+#: data/com.github.rajsolai.response.desktop.in:5
+#: data/com.github.rajsolai.response.appdata.xml.in:8
+msgid "Test your web page's Responsiveness"
+msgstr "Metti alla prova la reattività della tua pagina web"
+
+#: data/com.github.rajsolai.response.desktop.in:8
+msgid "com.github.rajsolai.response"
+msgstr "com.github.rajsolai.response"
+
+#: data/com.github.rajsolai.response.desktop.in:11
+msgid "Response;"
+msgstr "Response;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:10
+msgid "Cool and Less resource hogging way to check webpage responsiveness."
+msgstr "Un modo interessante e meno di monopolio delle risorse per controllare la reattività del sito Web."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:12
+msgid "Minimal UI 🎨️."
+msgstr "Interfaccia utente minima 🎨️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:13
+msgid "Low resource consumption 🍰️."
+msgstr "Basso consumo di risorse 🍰️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:14
+msgid "Single Tab based Configuration 👨‍💻️."
+msgstr "Configurazione basata su scheda singola 👨‍💻️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:20
+msgid "Solai Raj"
+msgstr "Solai Raj"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:64
+msgid "v1.1.1"
+msgstr "v1.1.1"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:66
+msgid "- New Icon"
+msgstr "- Nuova icona"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:67
+msgid "- Added a landscape size"
+msgstr "- Aggiunta una dimensione orizzontale"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:68
+msgid "- Optimizations for elementary OS"
+msgstr "- Ottimizzazioni per elementary OS"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:74
+msgid "v1.1.0"
+msgstr "v1.1.0"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:76
+msgid "- New Window Method"
+msgstr "- Nuovo metodo finestra"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:77
+msgid "- Rounded Windows"
+msgstr "- Finestre arrotondate"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:78
+msgid "- Dropdown to select Device"
+msgstr "- Menu a discesa per selezionare il Dispositivo"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:79
+msgid "- Bug Fix and Optimizations"
+msgstr "- Correzione di bug e ottimizzazioni"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:86
+msgid "Initial Release"
+msgstr "Versione iniziale"
