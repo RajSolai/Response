@@ -1,0 +1,77 @@
+# ITALIAN TRANSLATION FOR RESPONSE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.rajsolai.response package.
+# ALBANO BATTISTELLA <ALBANO_BATTISTELLA@HOTMAIL.COM>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.rajsolai.response\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 13:55+0100\n"
+"PO-Revision-Date: 2022-05-21 15:16+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/MainWindow.vala:26 src/Dialogs/AboutDialog.vala:25
+msgid "Response"
+msgstr "Response"
+
+#: src/Dialogs/AboutDialog.vala:27
+msgid "Test your web page's Responsiveness ! 👨‍💻️"
+msgstr "Metti alla prova la reattività della tua pagina web! 👨‍💻️"
+
+#: src/Dialogs/AboutDialog.vala:29
+msgid "Visit Response"
+msgstr "Visita la risposta"
+
+#: src/Dialogs/EmptyUrlAlert.vala:26
+msgid "That Was an Empty Url 😥️ !"
+msgstr "Quello era un URL vuoto 😥️!"
+
+#: src/Screens/AnotherMainView.vala:32
+msgid "Check"
+msgstr "Controllo"
+
+#: src/Screens/AnotherMainView.vala:42
+msgid "iPhone SE"
+msgstr "iPhone SE"
+
+#: src/Screens/AnotherMainView.vala:43
+msgid "Moto G4"
+msgstr Moto G4""
+
+#: src/Screens/AnotherMainView.vala:44
+msgid "iPhone 8"
+msgstr "iPhone 8"
+
+#: src/Screens/AnotherMainView.vala:45
+msgid "Pixel 2"
+msgstr "Pixel 2"
+
+#: src/Screens/AnotherMainView.vala:46
+msgid "Desktop"
+msgstr "Desktop"
+
+#: src/Screens/AnotherMainView.vala:47
+msgid "Galaxy Fold"
+msgstr "Galaxy Fold"
+
+#: src/Screens/AnotherMainView.vala:116
+msgid "Select Device :"
+msgstr "Seleziona dispositivo"
+
+#: src/Widgets/HeaderBar.vala:29
+msgid "Light Mode"
+msgstr "Modalità chiara"
+
+#: src/Widgets/HeaderBar.vala:30
+msgid "Dark Mode"
+msgstr "Modalità scura"
+
+#: src/Widgets/UrlEntry.vala:24
+msgid "Enter the Url here…"
+msgstr "Inserisci qui l'URL…"
