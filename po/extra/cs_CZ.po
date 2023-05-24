@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 13:59+0100\n"
+"PO-Revision-Date: 2023-05-24 09:47+0200\n"
+"Last-Translator: Ondřej Tuček <ondrejtucek9@gmail.com>\n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: data/com.github.rajsolai.response.desktop.in:4
+#: data/com.github.rajsolai.response.desktop.in:6
+#: data/com.github.rajsolai.response.appdata.xml.in:7
+msgid "Response"
+msgstr "Odezva"
+
+#: data/com.github.rajsolai.response.desktop.in:5
+#: data/com.github.rajsolai.response.appdata.xml.in:8
+msgid "Test your web page's Responsiveness"
+msgstr "Otestuj responzivitu své stránky"
+
+#: data/com.github.rajsolai.response.desktop.in:8
+msgid "com.github.rajsolai.response"
+msgstr "com.github.rajsolai.response"
+
+#: data/com.github.rajsolai.response.desktop.in:11
+msgid "Response;"
+msgstr "Odezva;"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:10
+msgid "Cool and Less resource hogging way to check webpage responsiveness."
+msgstr "Skvělý a Méně náročný způsob kontroly responzivity webové stránky."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:12
+msgid "Minimal UI 🎨️."
+msgstr "Minimalní UI 🎨️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:13
+msgid "Low resource consumption 🍰️."
+msgstr "Nenáročný na prostředky 🍰️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:14
+msgid "Single Tab based Configuration 👨‍💻️."
+msgstr "Konfigurace pro jednotlivé záložky 👨‍💻️."
+
+#: data/com.github.rajsolai.response.appdata.xml.in:20
+msgid "Solai Raj"
+msgstr "Solai Raj"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:64
+msgid "v1.1.1"
+msgstr "v1.1.1"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:66
+msgid "- New Icon"
+msgstr "- Nová Ikona"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:67
+msgid "- Added a landscape size"
+msgstr "- Přidáno horizontální pohled"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:68
+msgid "- Optimizations for elementary OS"
+msgstr "- Optimalizace pro elementary OS"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:74
+msgid "v1.1.0"
+msgstr "v1.1.0"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:76
+msgid "- New Window Method"
+msgstr "- Nová metoda pro vykreslení aplikace"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:77
+msgid "- Rounded Windows"
+msgstr "- Zakulacené rohy"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:78
+msgid "- Dropdown to select Device"
+msgstr "- Rozevírací seznam pro výběr zařízení"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:79
+msgid "- Bug Fix and Optimizations"
+msgstr "- Oprava chyb a Optimalizace"
+
+#: data/com.github.rajsolai.response.appdata.xml.in:86
+msgid "Initial Release"
+msgstr "Původní vydání"
